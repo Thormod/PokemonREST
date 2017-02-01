@@ -37,6 +37,7 @@ public class PokemonController {
 		
 		return pokemonRepository.getAvaiblePokemons();
 	}
+	
 	@RequestMapping(value="/pokemons/{id}", method=RequestMethod.GET)
 	@ResponseBody
 	public Pokemon getPokemonById(@PathVariable("id") int id){
